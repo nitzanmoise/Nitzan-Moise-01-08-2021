@@ -62,7 +62,11 @@ function WeatherList({ wetherData, addToFavorites, removeFromFavorites }) {
             >
               {wetherData.location.weeklyWeather.DailyForecasts.map(
                 (item, index) => (
-                  <Dailyforcast key={index} day={item}></Dailyforcast>
+                  <Dailyforcast
+                    key={index}
+                    day={item}
+                    index={index}
+                  ></Dailyforcast>
                 )
               )}
             </Grid>

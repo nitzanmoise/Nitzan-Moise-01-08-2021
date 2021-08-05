@@ -54,12 +54,15 @@ function FavoritesList({ wetherData, removeFromFavorites }) {
         {wetherData.favorites.length > 0 &&
           wetherData.favorites.map((loc, index) => (
             <Card key={index} className={classes.root}>
-              <FavoriteIcon className="heart"></FavoriteIcon>
-              <Link className="arrow-link" to="/weather">
-                <ArrowForwardIcon
-                  onClick={() => chooseFav(loc)}
-                ></ArrowForwardIcon>
-              </Link>
+              <div className="fav-header">
+                <FavoriteIcon className="heart"></FavoriteIcon>
+
+                <Link className="arrow-link" to="/weather">
+                  <ArrowForwardIcon
+                    onClick={() => chooseFav(loc)}
+                  ></ArrowForwardIcon>
+                </Link>
+              </div>
 
               <CardContent>
                 <Typography
