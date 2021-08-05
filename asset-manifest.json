@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/heroloweather/static/css/main.febff5ad.chunk.css",
-    "main.js": "/heroloweather/static/js/main.a345b492.chunk.js",
-    "main.js.map": "/heroloweather/static/js/main.a345b492.chunk.js.map",
+    "main.js": "/heroloweather/static/js/main.ff49d567.chunk.js",
+    "main.js.map": "/heroloweather/static/js/main.ff49d567.chunk.js.map",
     "runtime-main.js": "/heroloweather/static/js/runtime-main.0023b17a.js",
     "runtime-main.js.map": "/heroloweather/static/js/runtime-main.0023b17a.js.map",
-    "static/js/2.6d9c122e.chunk.js": "/heroloweather/static/js/2.6d9c122e.chunk.js",
-    "static/js/2.6d9c122e.chunk.js.map": "/heroloweather/static/js/2.6d9c122e.chunk.js.map",
+    "static/js/2.a3e519fd.chunk.js": "/heroloweather/static/js/2.a3e519fd.chunk.js",
+    "static/js/2.a3e519fd.chunk.js.map": "/heroloweather/static/js/2.a3e519fd.chunk.js.map",
     "index.html": "/heroloweather/index.html",
     "static/css/main.febff5ad.chunk.css.map": "/heroloweather/static/css/main.febff5ad.chunk.css.map",
-    "static/js/2.6d9c122e.chunk.js.LICENSE.txt": "/heroloweather/static/js/2.6d9c122e.chunk.js.LICENSE.txt"
+    "static/js/2.a3e519fd.chunk.js.LICENSE.txt": "/heroloweather/static/js/2.a3e519fd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0023b17a.js",
-    "static/js/2.6d9c122e.chunk.js",
+    "static/js/2.a3e519fd.chunk.js",
     "static/css/main.febff5ad.chunk.css",
-    "static/js/main.a345b492.chunk.js"
+    "static/js/main.ff49d567.chunk.js"
   ]
 }
