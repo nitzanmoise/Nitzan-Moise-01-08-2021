@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import NavBar from "./components/NavBar";
+import Weather from "./pages/Weather";
+import Favorites from "./pages/Favorites";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BottomNavigation } from "@material-ui/core";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar></NavBar>
+        <Switch>
+          <Route path="/weather">
+            <Weather />
+          </Route>
+          <Route path="/favorites">
+            <Favorites />
+          </Route>
+        </Switch>
+        <BottomNavigation></BottomNavigation>
+      </Router>
     </div>
   );
 }
