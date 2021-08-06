@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles({
   root: {
     minWidth: 105,
-    width: "80%",
+    width: "150px",
     margin: "10px",
   },
   bullet: {

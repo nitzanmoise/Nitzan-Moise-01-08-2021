@@ -9,6 +9,7 @@ a{
 .Favorites{
     h1{
         text-align: center;
+        color: #3f51b5;
     }
 }
 
@@ -20,6 +21,7 @@ button{
 }
 input{
     height: 20px;
+    margin-bottom: 20px;
 }
 
 .heart {
@@ -27,19 +29,22 @@ input{
     align-self: baseline;
     justify-self: baseline;
     color: gold;
-    // margin-left: 10px;
-    // margin-top: -100px;
 }
 .search{
 margin-bottom: -5px;
 }
-
+.weather-title{
+    margin-bottom: 10px;
+    color: #3f51b5;
+}
 .weather-panal{
-    border: 0.5px solid rgba(0, 0, 0, 0.151);
     padding: 50px;
     width: 80%;
     margin: 0;
     margin-top: 10px;
+    margin-bottom: 100px;
+        background: #00000003;
+
     header{
         display: flex;
         justify-content: space-between;
@@ -47,6 +52,7 @@ margin-bottom: -5px;
     h1{
         text-align: center;
         margin-bottom: 40px;
+        margin-top: -50px;
     }
 }
 
@@ -58,4 +64,32 @@ margin-bottom: -5px;
     display: flex;
     justify-content: space-between;
     padding: 15px;
+}
+
+.MuiBottomNavigationAction-wrapper{
+color: white;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+ .weather-panal {
+     padding: 50px;
+     width: 80%;
+     margin: 0;
+     margin-top: 10px;
+     margin-bottom: 100px;
+     background: #00000003;
+
+     header {
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+     }
+
+     h1 {
+         text-align: center;
+         margin-bottom: 40px;
+         margin-top: 50px;
+     }
+ }
 }

@@ -34,7 +34,7 @@ function Weather({ fetchCity, wetherData }) {
         spacing={3}
       >
         <Grid item xs={12}>
-          <h1>Search for locations</h1>
+          <h1 className="weather-title">Search for locations</h1>
         </Grid>
         <Grid item xs={12}>
           <input
