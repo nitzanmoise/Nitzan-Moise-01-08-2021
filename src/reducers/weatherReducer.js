@@ -95,6 +95,8 @@ const reducer = (state = initialState, action) => {
         },
       };
     case ADD_TO_FAVORITES:
+      if (action.payload.id) {
+      }
       return {
         ...state,
         favorites: [...state.favorites, action.payload],

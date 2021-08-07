@@ -38,14 +38,11 @@ function App() {
       <Router>
         <NavBar></NavBar>
         <Switch>
-          <Route path="/weather">
-            <Weather />
-          </Route>
           <Route path="/favorites">
             <Favorites />
           </Route>
-          <Route exact path="/">
-            <Redirect to="/weather" />
+          <Route path="/">
+            <Weather />
           </Route>
         </Switch>
         <BottomNavigation
@@ -56,7 +53,7 @@ function App() {
           showLabels
           className={classes.root}
         >
-          <Link to="/weather">
+          <Link to="/">
             <BottomNavigationAction
               className={classes.link}
               icon={<LocationOnIcon />}

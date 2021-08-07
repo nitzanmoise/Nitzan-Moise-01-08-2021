@@ -25,9 +25,12 @@ const NavBar = () => {
     <div className="NavBar">
       <AppBar position="static">
         <Toolbar className={classes.barWeapper}>
-          <h3>Heoloweather</h3>
+          <Link to="/">
+            <h3>Heoloweather</h3>
+          </Link>
+
           <div>
-            <Link to="/weather">
+            <Link to="/">
               <Button>Weather</Button>
             </Link>
             <Link to="/favorites">

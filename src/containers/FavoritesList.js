@@ -57,7 +57,7 @@ function FavoritesList({ wetherData, removeFromFavorites }) {
               <div className="fav-header">
                 <FavoriteIcon className="heart"></FavoriteIcon>
 
-                <Link className="arrow-link" to="/weather">
+                <Link className="arrow-link" to="/">
                   <ArrowForwardIcon
                     onClick={() => chooseFav(loc)}
                   ></ArrowForwardIcon>
