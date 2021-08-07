@@ -28,7 +28,7 @@ const initialState = {
   currWeather: {},
   weeklyWeather: {},
   favorites: [],
-  error: "",
+  error: false,
 };
 
 const reducer = (state = initialState, action) => {
@@ -37,27 +37,31 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         loading: true,
+        error: false,
       };
     case FETCH_CITY_SUCCESS:
       return {
         ...state,
         city: action.payload,
+        error: false,
       };
     case FETCH_CITY_FAILURE:
       return {
         loading: false,
         ...state,
         city: action.payload,
-        error: "error",
+        error: true,
       };
     case FETCH_WEATHER_REQUEST:
       return {
         ...state,
         loading: true,
+        error: false,
       };
     case FETCH_WEATHER_SUCCESS:
       return {
         ...state,
+        error: false,
 
         currWeather: action.payload,
       };
@@ -65,16 +69,18 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         currWeather: action.payload,
-        error: "error",
+        error: true,
       };
     case FETCH_WEEEKLY_REQUEST:
       return {
         ...state,
         loading: true,
+        error: false,
       };
     case FETCH_WEEKLY_SUCCESS:
       return {
         ...state,
+        error: false,
 
         weeklyWeather: action.payload,
       };
@@ -82,7 +88,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         weeklyWeather: action.payload,
-        error: "error",
+        error: true,
       };
     case UPDATE_CURRENT_LOCATION:
       return {

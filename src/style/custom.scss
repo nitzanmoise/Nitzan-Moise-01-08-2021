@@ -70,6 +70,19 @@ margin-bottom: -5px;
 color: white;
 }
 
+
+.modal-panal{
+    background-color: lightgrey;
+    width: 400px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    padding: 20px;
+    p{
+        font-size: 1.5em;
+         color:black;
+    }
+}
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
  .weather-panal {

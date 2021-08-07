@@ -5,16 +5,25 @@ import WeatherList from "../containers/WeatherList";
 import SearchIcon from "@material-ui/icons/Search";
 import { fetchCity } from "../actions/weatherActions";
 import { connect } from "react-redux";
+import Modal from "@material-ui/core/Modal";
 
 function Weather({ fetchCity, wetherData }) {
   const [value, setValue] = useState("");
+  const [open, setOpen] = useState(false);
 
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   useEffect(() => {
     // Setting default city
     if (wetherData.city.Key === "") {
       fetchCity("Tel Aviv");
     }
-  });
+  }, []);
 
   function handleChange(e) {
     let value = e.target.value;
@@ -23,7 +32,11 @@ function Weather({ fetchCity, wetherData }) {
 
     setValue(value);
     fetchCity(e.target.value);
+    if (wetherData.error) {
+      handleOpen();
+    }
   }
+
   return (
     <div className="Weather">
       <Grid
@@ -35,6 +48,9 @@ function Weather({ fetchCity, wetherData }) {
       >
         <Grid item xs={12}>
           <h1 className="weather-title">Search for locations</h1>
+          <button type="button" onClick={handleOpen}>
+            Open Modal
+          </button>
         </Grid>
         <Grid item xs={12}>
           <input
@@ -50,6 +66,16 @@ function Weather({ fetchCity, wetherData }) {
         </Grid>
       </Grid>{" "}
       <WeatherList></WeatherList>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <div className="modal-panal">
+          <p>No more api requests left, wait for tomorrow</p>
+        </div>
+      </Modal>
     </div>
   );
 }
