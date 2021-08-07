@@ -48,9 +48,6 @@ function Weather({ fetchCity, wetherData }) {
       >
         <Grid item xs={12}>
           <h1 className="weather-title">Search for locations</h1>
-          <button type="button" onClick={handleOpen}>
-            Open Modal
-          </button>
         </Grid>
         <Grid item xs={12}>
           <input
