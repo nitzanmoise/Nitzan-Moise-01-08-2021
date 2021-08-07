@@ -27,7 +27,7 @@ const useStyles = makeStyles({
 function Dailyforcast({ day, index }) {
   const classes = useStyles();
   const [temprature, setTemprature] = useState("");
-  const [isCelius, setIsCelsius] = useState(false);
+  const [isCelius, setIsCelsius] = useState(true);
   const [weekday, setWeekday] = useState("");
   const dayOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
@@ -38,7 +38,7 @@ function Dailyforcast({ day, index }) {
   useEffect(() => {
     const degrees = day.Temperature.Maximum.Value;
     const currDay = dayOfWeek.filter((item, i) => i === index);
-    setTemprature(degrees);
+    setTemprature(fahrenheitToCelsius(degrees));
     setWeekday(currDay);
   }, []);
 
