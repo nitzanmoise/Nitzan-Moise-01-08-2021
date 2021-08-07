@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Nitzan-Moise-01-08-2021/static/css/main.64d71779.chunk.css",
-    "main.js": "/Nitzan-Moise-01-08-2021/static/js/main.890388de.chunk.js",
-    "main.js.map": "/Nitzan-Moise-01-08-2021/static/js/main.890388de.chunk.js.map",
+    "main.js": "/Nitzan-Moise-01-08-2021/static/js/main.73c0cd67.chunk.js",
+    "main.js.map": "/Nitzan-Moise-01-08-2021/static/js/main.73c0cd67.chunk.js.map",
     "runtime-main.js": "/Nitzan-Moise-01-08-2021/static/js/runtime-main.09c12721.js",
     "runtime-main.js.map": "/Nitzan-Moise-01-08-2021/static/js/runtime-main.09c12721.js.map",
     "static/js/2.a260e10e.chunk.js": "/Nitzan-Moise-01-08-2021/static/js/2.a260e10e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.09c12721.js",
     "static/js/2.a260e10e.chunk.js",
     "static/css/main.64d71779.chunk.css",
-    "static/js/main.890388de.chunk.js"
+    "static/js/main.73c0cd67.chunk.js"
   ]
 }
