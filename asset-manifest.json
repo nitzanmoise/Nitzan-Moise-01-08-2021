@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/heroloweather/weather/static/css/main.febff5ad.chunk.css",
-    "main.js": "/heroloweather/weather/static/js/main.ff49d567.chunk.js",
-    "main.js.map": "/heroloweather/weather/static/js/main.ff49d567.chunk.js.map",
-    "runtime-main.js": "/heroloweather/weather/static/js/runtime-main.a53d8205.js",
-    "runtime-main.js.map": "/heroloweather/weather/static/js/runtime-main.a53d8205.js.map",
-    "static/js/2.a3e519fd.chunk.js": "/heroloweather/weather/static/js/2.a3e519fd.chunk.js",
-    "static/js/2.a3e519fd.chunk.js.map": "/heroloweather/weather/static/js/2.a3e519fd.chunk.js.map",
-    "index.html": "/heroloweather/weather/index.html",
-    "static/css/main.febff5ad.chunk.css.map": "/heroloweather/weather/static/css/main.febff5ad.chunk.css.map",
-    "static/js/2.a3e519fd.chunk.js.LICENSE.txt": "/heroloweather/weather/static/js/2.a3e519fd.chunk.js.LICENSE.txt"
+    "main.css": "/Nitzan-Moise-01-08-2021/static/css/main.4f711124.chunk.css",
+    "main.js": "/Nitzan-Moise-01-08-2021/static/js/main.e898176b.chunk.js",
+    "main.js.map": "/Nitzan-Moise-01-08-2021/static/js/main.e898176b.chunk.js.map",
+    "runtime-main.js": "/Nitzan-Moise-01-08-2021/static/js/runtime-main.09c12721.js",
+    "runtime-main.js.map": "/Nitzan-Moise-01-08-2021/static/js/runtime-main.09c12721.js.map",
+    "static/js/2.799bdc2b.chunk.js": "/Nitzan-Moise-01-08-2021/static/js/2.799bdc2b.chunk.js",
+    "static/js/2.799bdc2b.chunk.js.map": "/Nitzan-Moise-01-08-2021/static/js/2.799bdc2b.chunk.js.map",
+    "index.html": "/Nitzan-Moise-01-08-2021/index.html",
+    "static/css/main.4f711124.chunk.css.map": "/Nitzan-Moise-01-08-2021/static/css/main.4f711124.chunk.css.map",
+    "static/js/2.799bdc2b.chunk.js.LICENSE.txt": "/Nitzan-Moise-01-08-2021/static/js/2.799bdc2b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a53d8205.js",
-    "static/js/2.a3e519fd.chunk.js",
-    "static/css/main.febff5ad.chunk.css",
-    "static/js/main.ff49d567.chunk.js"
+    "static/js/runtime-main.09c12721.js",
+    "static/js/2.799bdc2b.chunk.js",
+    "static/css/main.4f711124.chunk.css",
+    "static/js/main.e898176b.chunk.js"
   ]
 }
